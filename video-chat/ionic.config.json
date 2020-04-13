@@ -1,0 +1,7 @@
+{
+  "name": "Basic-Video-Chat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      OpenTok Ionic Basic Video Chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating class="">Api Key</ion-label>
+    <ion-input type="text" [(ngModel)]="apiKey"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating class="">Session Id</ion-label>
+    <ion-input type="text" [(ngModel)]="sessionId"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating class="">Token</ion-label>
+    <ion-input type="text" [(ngModel)]="token"></ion-input>
+  </ion-item>
+  <div style="text-align:center">
+    <button ion-button (click)="startCall(apiKey,sessionId,token)" >Start OpenTok Call</button>
+  </div>
+  subscriber : <div id="subscriber" ></div>
+ publisher: <div id="publisher" ></div> 
+ 
+</ion-content>
